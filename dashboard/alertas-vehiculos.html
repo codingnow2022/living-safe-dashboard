@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vehículos Alertas | Dashboard Admin App</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Style Table -->
+    <link href="css/lib/data-table/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/helper.css" rel="stylesheet">
+    <link href="css/style-table.css" rel="stylesheet">
+    <!-- Style General -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-dash  border-bottom">
+        <div class="container-dash">
+            <div class="d-flex flex-wrap align-items-center  cont-nav-dash">
+                <a href="home.html"
+                    class="logodash d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <img class="brand" src="img/escudo.png" alt="">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto  mb-2 justify-content-center mb-md-0">
+                    <li><a href="incidencias.html" class="nav-link px-2 ">Incidencias</a></li>
+                    <li><a href="emergencias.html" class="nav-link px-2 ">Emergencias</a></li>
+                    <li><a href="alertas-vehiculos.html" class="nav-link px-2 active">Alertas Vehículos</a></li>
+                </ul>
+                <!-- 
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form> -->
+
+                <div class="dropdown text-end">
+
+                    <a href="#" class="d-block user text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        Luis Felipe Restrepo
+                    </a>
+
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intermedio">
+        <div class="container-dash">
+            <a href="#" class="prev"><i class="bi bi-arrow-left"></i> Volver Anterior</a>
+            <h2>Alertas Vehículos</h2>
+        </div>
+    </section>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-dash">
+                <!-- /# row -->
+                <section id="main-content">
+                    <div class="row stretch">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="bootstrap-data-table-panel no-export">
+                                    <div class="table-responsive">
+                                        <table id="bootstrap-data-table-export" class="table table-bordered ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Fecha y Hora</th>
+                                                    <th>Placa</th>
+                                                    <th>Teléfono</th>
+                                                    <th>Estado</th>
+                                                    <!-- <th>Empresa</th> -->
+                                                    <!-- <th>Latitud</th>
+                                                    <th>Logitud</th> -->
+                                                    <th>Ver en Mapa</th>
+                                                    <th>Histórico</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>01/13/2023 00:51:50</td>
+                                                    <td>QAZ123</td>
+                                                    <td>3208932127</td>
+                                                    <td>Activo</td>
+                                                    <!-- <td>Cootransporte</td> -->
+                                                    <!-- <td>4.8680173</td>
+                                                    <td>-74.056206</td> -->
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                    <td><a href="#" class="btn-primary-dash">Ver</a></td>
+                                                </tr>
+                                                
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /# card -->
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card detalle">
+                                <div class="row">
+                                    <div class="col-lg-6 text-center col-md-6">
+                                        <p><b>Latitud:</b> 4.8490834</p>
+                                    </div>
+                                    <div class="col-lg-6 text-center col-md-6">
+                                        <p><b>Logintud:</b> -74.0795788</p>
+                                    </div>
+                                </div>
+
+                                <iframe src="https://maps.google.com/?q=4.8490834,-74.0795788&amp;output=embed"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                    </div>
+                    <!-- /# row -->
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- jquery vendor -->
+    <script src="js/lib/jquery.min.js"></script>
+    <!-- sidebar -->
+
+    <!-- bootstrap -->
+
+    <!-- <script src="js/lib/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/data-table/datatables.min.js"></script>
+    <script src="js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="js/lib/data-table/buttons.flash.min.js"></script>
+    <script src="js/lib/data-table/jszip.min.js"></script>
+    <script src="js/lib/data-table/pdfmake.min.js"></script>
+    <script src="js/lib/data-table/vfs_fonts.js"></script>
+    <script src="js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="js/lib/data-table/buttons.print.min.js"></script>
+    <script src="js/lib/data-table/datatables-init.js"></script>
+
+
+</body>
+
+</html>

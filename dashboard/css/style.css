@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --font-titles: 'Work Sans', sans-serif;
+    --font-text: 'Quicksand', sans-serif;
+    --primary-color: #0c40ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-titles);
+}
+
+p,
+label,
+input,
+textarea,
+select,
+button,
+li,
+a,
+th,
+td {
+    font-family: var(--font-text) !important;
+}
+
+header.header-dash {
+    border-bottom: 1px solid #fff;
+}
+
+header.header-dash .logodash {
+    padding: 0px 35px;
+    background: #ffffff;
+}
+
+header .brand {
+    width: 100px;
+
+}
+
+header ul.nav {
+    margin-left: 60px;
+}
+
+header ul.nav li {
+    margin: 0px 10px;
+}
+
+header ul.nav li a {
+    color: #4c4f53;
+    font-weight: 500;
+    padding: 28px;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+header ul.nav li a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    left: 5%;
+    height: 2px;
+    background: transparent;
+    top: 1px;
+    z-index: 999;
+    transition: .4s;
+}
+
+header ul.nav li a:hover,
+header ul.nav li a.active {
+    color: var(--primary-color);
+}
+
+header ul.nav li a:hover::after,
+header ul.nav li a.active::after {
+    width: 90%;
+    background: var(--primary-color);
+}
+
+header .dropdown a.user {
+    color: #4c4f53;
+    font-weight: 500;
+}
+
+header .dropdown a.user:hover {
+    color: var(--primary-color);
+}
+
+header .cont-nav-dash {
+    justify-content: space-between;
+}
+
+.container-dash {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+
+.intermedio {
+    padding: 68px 0 30px;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    background: transparent;
+}
+
+.intermedio::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 170%;
+    background: var(--primary-color);
+    z-index: -1;
+}
+
+.intermedio .prev {
+    padding: 10px;
+    color: #fff;
+    background: #5479ff;
+    margin-bottom: 20px;
+}
+
+.intermedio h2 {
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.content-wrap {
+    z-index: 10;
+    position: relative;
+}
+
+.container-dash .card {
+    border-radius: 0px !important;
+    padding: 30px 40px;
+}
+
+.btn-primary-dash {
+    width: 100%;
+    display: block;
+    background: var(--primary-color);
+    padding: 6px 15px;
+    text-align: center;
+    border-radius: 0px;
+    color: #ffff;
+    border: 1px solid var(--primary-color);
+    font-weight: 300;
+    transition: .4s;
+}
+
+.btn-primary-dash:hover {
+    transform: scale(0.95);
+    color: #fff;
+}
+
+button.btn-primary-dash {
+    width: auto;
+    display: block;
+    background: var(--primary-color);
+    padding: 12px 30px;
+    text-align: center;
+    border-radius: 0px;
+    color: #ffff;
+    margin-top: 20px;
+    border: 1px solid var(--primary-color);
+    font-weight: 300;
+    transition: .4s;
+}
+
+.btn-primary-dash:hover {
+    transform: scale(0.95);
+    color: #fff;
+}
+
+table.table td,
+table.table th {
+    vertical-align: middle;
+}
+
+.card.resumen h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card.resumen p {
+    color: #4c4f53;
+    font-size: 22px;
+}
+
+.card.detalle p {
+    color: #4c4f53;
+    font-size: 16px;
+}
+
+.card.detalle.foto img {
+    max-height: 567px;
+}
+
+.stretch .card {
+    height: 100%;
+}
+
+form .campo-dash {
+    padding: 14px;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+
+form .campo-dash:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.card.detalle.foto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card.detalle.foto img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Talet */
+@media screen and (min-width: 768px) and (max-width:990px) {
+    header ul.nav {
+        margin-left: 0px;
+    }
+
+    header .cont-nav-dash {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    header ul.nav li a:hover::after,
+    header ul.nav li a.active::after {
+        width: 90%;
+        background: transparent;
+    }
+}

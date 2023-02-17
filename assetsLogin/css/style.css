@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --font-titles: 'Work Sans', sans-serif;
+    --font-text: 'Quicksand', sans-serif;
+    --primary-color: #0c40ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-titles);
+}
+
+p,
+label,
+input,
+textarea,
+select,
+button,
+li,
+a {
+    font-family: var(--font-text);
+}
+
+#contGeneral {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffff;
+    position: relative;
+
+}
+
+#contGeneral::after {
+    width: 100%;
+    height: 42%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../img/bg-login.png");
+    background-size: cover;
+    background-position-y: top;
+    z-index: 9;
+}
+
+#contGeneral::before {
+    width: 100%;
+    height: 42%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    opacity: .80;
+}
+
+.centrar {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    position: relative;
+    padding-top: 120px;
+}
+
+.right .contForm {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 50px 70px;
+    box-shadow: 0px 6px 7px -3px #333333;
+    background: #fff;
+}
+
+.right .contForm .brands {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contForm .brands img {
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.contForm h2 {
+    color: #4c4f53;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contForm p {
+    text-align: center;
+    color: #212529;
+}
+
+.contForm form {
+    margin-top: 25px;
+    color: #4c4f53;
+    ;
+}
+
+.contForm form button {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 14px;
+    border-radius: 0px;
+    color: #ffff;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border: 1px solid var(--primary-color);
+    font-weight: 700;
+}
+
+.contForm form input {
+    padding: 14px;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+
+.contForm form input:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.contForm form label {
+    color: #4c4f53;
+}
+
+.contForm form a {
+    color: var(--primary-color);
+}
+
+
+.left {
+    padding-top: 180px;
+    padding-right: 40px;
+}
+
+.left h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: #4c4f53;
+    
+}
+
+.left p {
+    padding-top: 40px;
+}
+
+.left ul {
+    display: inline-block;
+    padding: 0;
+    display: flex;
+    margin-top: 50px;
+}
+
+.left ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.left ul a i {
+    font-size: 26px;
+    color: var(--primary-color);
+}
