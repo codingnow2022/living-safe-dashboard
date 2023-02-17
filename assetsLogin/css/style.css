@@ -4,10 +4,10 @@
 
 
 :root {
-    --font-titles: font-family: 'Montserrat', sans-serif;
+    --font-titles: 'Montserrat', sans-serif;
     --font-text: 'Quicksand', sans-serif;
-    --primary-color:  #33CB98;
-    --secondary-color: #010A43;
+    --secondary-color:  #33CB98;
+    --primary-color: #010A43;
 }
 
 h1,
@@ -102,6 +102,7 @@ a {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 .contForm p {
